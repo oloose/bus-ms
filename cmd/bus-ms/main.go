@@ -1,9 +1,7 @@
 package main
 
 import (
-	"log"
 	"os"
-	"os/signal"
 	"time"
 
 	busServer "bus-ms/internal/server"
@@ -46,24 +44,6 @@ func main() {
 			Usage:  "Starts the bus micro service",
 			Action: StartBusServer,
 		},
-	}
-
-	// gracefully shutdown
-	gracefulStop := make(chan os.Signal, 1)
-	signal.Notify(gracefulStop, os.Interrupt)
-	signal.Notify(gracefulStop, os.Kill)
-	go func() {
-		<-gracefulStop
-
-		//TODO: Add file close
-
-		os.Exit(0)
-	}()
-
-	// run cli
-	err := app.Run(os.Args)
-	if err != nil {
-		log.Fatalf("Error during start up: '%s'", err)
 	}
 }
 
