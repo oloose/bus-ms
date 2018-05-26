@@ -1,0 +1,47 @@
+swagger: "2.0"
+info:
+  description: "This is the API documentation for the bus microservice."
+  version: "1.0.0"
+  title: "Bus Microservice"
+# host: "petstore.swagger.io"
+# basePath: "/v2"
+tags:
+- name: "bus"
+  description: "Accessible routes for bus"
+schemes:
+- "http"
+paths:
+  /bus/plan:
+    get:
+      tags:
+      - "bus"
+      summary: "Find a newsletter by id"
+      description: "Returns a single newsletter"
+      operationId: "GetNewsletterById"
+      produces:
+      - "application/json"
+      responses:
+        404:
+          description: "Newsletter not found"
+        200: 
+          description: "Successful"
+          schema:
+            type: "array"
+            items:
+              $ref: "#/definitions/Bus"
+definitions:
+  Bus:
+    type: "object"
+    properties:
+      linie:
+        type: "string"
+      uhrzeit:
+        type: "string"
+        format: "date-time"
+      wochentag:
+        type: "array"
+        items:
+          type: "boolean"
+externalDocs:
+  description: "See code repository for more information"
+  url: "https://github.com/oloose/bus-ms"

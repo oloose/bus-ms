@@ -1,0 +1,106 @@
+[
+  {
+    "linie": "Linie 1 Parow",
+    "uhrzeit": "2018-05-26T08:30:50.800Z",
+    "wochentag": [
+      true,
+      true,
+      false,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "linie": "Linie 1 Parow",
+    "uhrzeit": "2018-05-26T15:00:50.800Z",
+    "wochentag": [
+      true,
+      true,
+      false,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "linie": "Linie 1 Olof-Palme-Platz",
+    "uhrzeit": "2018-05-26T08:35:50.800Z",
+    "wochentag": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "linie": "Linie 1 Olof-Palme-Platz",
+    "uhrzeit": "2018-05-26T15:05:50.800Z",
+    "wochentag": [
+      true,
+      true,
+      false,
+      false,
+      true,
+      false,
+      false
+    ]
+  },
+  {
+    "linie": "Linie 4 Viermorgen",
+    "uhrzeit": "2018-05-26T12:00:50.800Z",
+    "wochentag": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "linie": "Linie 1 Viermorgen",
+    "uhrzeit": "2018-05-26T23:00:50.800Z",
+    "wochentag": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "linie": "Linie 4 Viermorgen",
+    "uhrzeit": "2018-05-26T12:10:50.800Z",
+    "wochentag": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true
+    ]
+  },
+  {
+    "linie": "Linie 4 Viermorgen",
+    "uhrzeit": "2018-05-26T23:10:50.800Z",
+    "wochentag": [
+      false,
+      false,
+      false,
+      false,
+      false,
+      true,
+      true
+    ]
+  }
+]
