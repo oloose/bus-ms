@@ -4,7 +4,7 @@ import (
 	"os"
 	"time"
 
-	busServer "bus-ms/internal/server"
+	busServer "github.com/oloose/bus-ms/internal/server"
 
 	"net/http"
 
