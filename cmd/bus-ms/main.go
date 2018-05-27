@@ -9,6 +9,7 @@ import (
 	"net/http"
 
 	"github.com/urfave/cli"
+	"log"
 )
 
 var busEnv *BusEnv
@@ -44,6 +45,12 @@ func main() {
 			Usage:  "Starts the bus micro service",
 			Action: StartBusServer,
 		},
+	}
+
+	// run cli
+	err := app.Run(os.Args)
+	if err != nil {
+		log.Fatalf("Error during start up: '%s'", err)
 	}
 }
 
